@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Photo Gallery with URL Import</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Interactive Photo Gallery</h1>
+    
+    <!-- This div will display the selected image -->
+    <div id="image">Hover over an image below to display here.</div>
+    
+    <!-- Gallery for displaying images -->
+    <div id="gallery">
+      <img src="https://cdn.pixabay.com/photo/2025/01/20/20/11/shrine-9348003_1280.jpg" alt="Japanese Shrine" onmouseover="upDate(this)" onmouseout="undo()">
+      <img src="https://wallpapercave.com/wp/wp4511436.jpg" alt="Mountain scenery" onmouseover="upDate(this)" onmouseout="undo()">
+      <img src="https://cdn.pixabay.com/photo/2022/06/06/18/19/ocean-7246676_1280.jpg" alt="Beach scenery" onmouseover="upDate(this)" onmouseout="undo()">
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
